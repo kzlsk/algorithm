@@ -1,5 +1,3 @@
 function solution(my_string, letter) {
-    // 문자열 => 배열
-    answer = my_string.replaceAll(letter, '');
-    return answer;
+	return my_string.split('').filter(v => v !== letter).join('');
 }
